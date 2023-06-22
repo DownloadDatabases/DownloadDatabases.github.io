@@ -1,0 +1,17 @@
+{QNAP SERVERS}
+@call library QNAP
+@call microlauncher
+@call uupdump
+@call wrecPRO
+,WRT :recognize
+loop {
+  !ACTION WRT_find reaction {
+    lnwrite "WRITE Wrec found!" and WRT.NAME
+  }
+}
+dump {
+  
+}
+crash {
+  
+}
